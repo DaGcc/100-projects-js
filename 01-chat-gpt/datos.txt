@@ -1,0 +1,33 @@
+DATO - HTML : 
+    - <tempalte/>: la etiqueta 'template' no se renderiza en el DOM para de esa manera 
+                   renderizar de manera dinamica con js.
+
+DATO - CSS :
+
+    - vh && dvh => sirve para adaptar la altura a dispositivos. (revisar la compatibilidad):
+    ejemplo de uso: 
+
+DATO - JS: 
+
+    - WEB WORKES : 
+        * EN EL ARCHIVO WORKER
+            - onmessage : evento que va en el worker
+            - postmessage : evento que envia el worker al archivo que lo invoco 
+        * EN EL ARCHIVO QUE CREA LA REFERENCIA 
+            - const worker = new Worker('./worker.js'); => ./worker.js ES LA RUTA DEL ARCHIVO WORKER A LLAMAR
+            - worker.postMessage("hello worker") : envia un message al worker, el parametro puede ser un objeto.
+            - worker.onmessage : evento que se ejecuta cuando el worker envia un postmessage.
+
+WEB-MLL : 
+
+    * MODELOS 
+        - Llama
+        - phi => Microsoft
+        - Gemma => Google
+        - Mistral
+
+    * WEB - GPU : Es una nueva api de los navegadores, que permite es acceder a la potencia de la tarjeta grafica desde el navegadores
+        (verificar compatibilidad con el navegador  usando => navigator.gpu => si retorna es por que el navegador es compatible, caso contrario(undefined) no)
+
+        - ofrece un rendimiento alto.
+        - es para aceleracion por hardware.
